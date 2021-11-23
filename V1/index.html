@@ -17,18 +17,9 @@
 <div class="webgl-content">
     <div id="gameContainer" style="width: 1008px; height: 630px;background-color: #95FFE1 !important;"></div>
 </div>
- <button onclick="SendDataToUnity(this)" data-string="yourstringhere">Click me</button>
+ <!-- <button onclick="SendDataToUnity(this)" data-string="yourstringhere">Click me</button>!-->
 <script src="TemplateData/responsive.javascript">
-   function SendDataToUnity(data) {
-        // Don't change this line.
-        gameInstance.SendMessage("GetData","ReceiveData",data);
-        }
 
-        function handleEvent(message) {
-          messageData = JSON.stringify(message.data);
-		  }
-
-      document.addEventListener("message", handleEvent);
 </script>
 </body>
 </html>
